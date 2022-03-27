@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mkaboldy/bkk-departures-angular/issues"
   },
-  "homepage": "https://github.com/mkaboldy/bkk-departures-angular#readme"
+  "homepage": "https://github.com/mkaboldy/bkk-departures-angular#readme",
+  "devDependencies": {
+    "@angular/cli": "^13.3.0"
+  }
 }
