@@ -1,0 +1,23 @@
+{
+  "name": "bkk-departures-angular",
+  "version": "1.0.0",
+  "description": "Angular client for the BKK departures boards",
+  "main": "index.js",
+  "scripts": {
+    "test": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkaboldy/bkk-departures-angular.git"
+  },
+  "keywords": [
+    "bkk",
+    "angular"
+  ],
+  "author": "Miklos Kaboldy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkaboldy/bkk-departures-angular/issues"
+  },
+  "homepage": "https://github.com/mkaboldy/bkk-departures-angular#readme"
+}
