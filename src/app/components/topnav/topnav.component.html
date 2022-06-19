@@ -9,18 +9,22 @@
             <mat-icon>menu</mat-icon>
         </button>        
         <div fxShow="true" fxHide.lt-md>
-            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/location" routerLinkActive="active">Location</a>
-            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/departures" routerLinkActive="active">Departures</a>
-            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/settings" routerLinkActive="active">Settings</a>
-            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/about" routerLinkActive="active">About</a>
+            <a href="#" mat-button  routerLink="/location" routerLinkActive="active">Location</a>
+            <a href="#" mat-button  routerLink="/departures" routerLinkActive="active">Departures</a>
+            <a href="#" mat-button  routerLink="/settings" routerLinkActive="active">Settings</a>
+            <a href="#" mat-button  routerLink="/about" routerLinkActive="active">About</a>
         </div>            
     </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav #sidenav>
+<mat-sidenav #sidenav 
+    (opened)="displayStyle = 'block'"
+    (closed)="displayStyle = 'none'" 
+    [ngStyle]="{'display': displayStyle}"
+    >
     <mat-nav-list>
-        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/location" routerLinkActive="active">Location</a>
-        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/departures" routerLinkActive="active">Departures</a>
-        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
-        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/about" routerLinkActive="active">About</a>
+        <a (click)="sidenav.close()"  mat-list-item routerLink="/location" routerLinkActive="active">Location</a>
+        <a (click)="sidenav.close()"  mat-list-item routerLink="/departures" routerLinkActive="active">Departures</a>
+        <a (click)="sidenav.close()"  mat-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
+        <a (click)="sidenav.close()"  mat-list-item routerLink="/about" routerLinkActive="active">About</a>
     </mat-nav-list>
 </mat-sidenav>
