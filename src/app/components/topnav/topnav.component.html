@@ -1,26 +1,26 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <a class="navbar-brand" href="#" routerLink="/">
-            <img alt="logo" src="assets/images/logo.png">
-        </a>
+        <div fxShow="true">
+            <a mat-button class="navbar-brand" href="#" routerLink="/">
+                <img alt="logo" src="assets/images/logo.png">
+            </a>    
+        </div>
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
             <mat-icon>menu</mat-icon>
         </button>        
         <div fxShow="true" fxHide.lt-md>
-            <a href="#" mat-button (click)="collapseNav()"  routerLink="/location" routerLinkActive="active">Location</a>
-            <a href="#" mat-button (click)="collapseNav()"  routerLink="/departures" routerLinkActive="active">Departures</a>
-            <a href="#" mat-button (click)="collapseNav()"  routerLink="/settings" routerLinkActive="active">Settings</a>
-            <a href="#" mat-button (click)="collapseNav()"  routerLink="/about" routerLinkActive="active">About</a>
+            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/location" routerLinkActive="active">Location</a>
+            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/departures" routerLinkActive="active">Departures</a>
+            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/settings" routerLinkActive="active">Settings</a>
+            <a href="#" mat-button (click)="sidenav.toggle()"  routerLink="/about" routerLinkActive="active">About</a>
         </div>            
     </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a (click)="collapseNav()"  mat-list-item routerLink="/location" routerLinkActive="active">Location</a>
-            <a (click)="collapseNav()"  mat-list-item routerLink="/departures" routerLinkActive="active">Departures</a>
-            <a (click)="collapseNav()"  mat-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
-            <a (click)="collapseNav()"  mat-list-item routerLink="/about" routerLinkActive="active">About</a>
-        </mat-nav-list>
-    </mat-sidenav>
-</mat-sidenav-container>
+<mat-sidenav #sidenav>
+    <mat-nav-list>
+        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/location" routerLinkActive="active">Location</a>
+        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/departures" routerLinkActive="active">Departures</a>
+        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
+        <a (click)="sidenav.toggle()"  mat-list-item routerLink="/about" routerLinkActive="active">About</a>
+    </mat-nav-list>
+</mat-sidenav>
