@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './components/about/about.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { AboutComponent } from './components/about/about.component';
     TopnavComponent,
     FooterComponent,
     AboutComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { AboutComponent } from './components/about/about.component';
     MatIconModule,
     MatButtonModule,
     FlexLayoutModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
