@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './components/about/about.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { LocationComponent } from './components/location/location.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     FooterComponent,
     AboutComponent,
     SettingsComponent,
+    LocationComponent,
   ],
   imports: [
     BrowserModule,
