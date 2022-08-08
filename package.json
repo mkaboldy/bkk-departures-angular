@@ -1,6 +1,6 @@
 {
   "name": "bkk-departures-angular",
-  "version": "1.0.0",
+  "version": "14.0.0",
   "description": "Angular client for the BKK departures boards",
   "scripts": {
     "ng": "ng",
